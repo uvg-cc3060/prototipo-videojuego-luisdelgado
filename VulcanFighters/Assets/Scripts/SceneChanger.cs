@@ -24,4 +24,12 @@ public class SceneChanger : MonoBehaviour
 	{
 		Application.Quit();
 	}
+	public void HowTo()
+	{
+		SceneManager.LoadScene("HowTo");
+	}
+	public void MainMenu()
+	{
+		SceneManager.LoadScene("MainMenu");
+	}
 }

@@ -34,7 +34,8 @@ public class Attack : MonoBehaviour
 		timeToStop = (timeSinceLastPress>timeForComboes && timeSinceLastPress<=timeForRecovery);
 		if (hasEndedString)
 		{
-			hasEndedString = (timeSinceLastPress >= timeForRecovery);
+			state = 0;
+			hasEndedString = (timeSinceLastPress <= timeForRecovery);
 		}
 		
 
